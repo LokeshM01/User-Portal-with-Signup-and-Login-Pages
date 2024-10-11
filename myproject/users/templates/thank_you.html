@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>Your details have been successfully submitted.</p>
+    
+    {% if whatsapp_url %}
+        <p>Click the link below to verify your details on WhatsApp:</p>
+        <a href="{{ whatsapp_url }}" target="_blank">Send WhatsApp Message</a>
+    {% else %}
+        <p>No WhatsApp URL provided.</p>
+    {% endif %}
+    
+</body>
+</html>
